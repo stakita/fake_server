@@ -1,0 +1,15 @@
+{
+  "data": {
+    "id": 5,
+    "type": "video",
+    "attributes": {
+      "id": 5,
+      "name": "Creating New Promises",
+      "description": "<p>Sometimes you want to start a new promise chain or have greater control over the timing of events. By manually creating a promise, you can do that.</p>\n<p>In this video we cover creating a new promise and resolving or rejecting the promise. We use two examples- a custom AJAX login and an Ember Data findAll request.</p>",
+      "thumbnail": "https://vue-screencasts.s3.us-east-2.amazonaws.com/images/video-thumbnails/thumbnail+-+Creating+New+Promises.png",
+      "videoUrl": "https://vue-screencasts.s3.us-east-2.amazonaws.com/video-files/EmberScreencast+93+-+Creating+New+Promises.mp4",
+      "created_at": "2022-06-09T00:00:00.000Z",
+      "updated_at": "2022-06-09T00:00:00.000Z"
+    }
+  }
+}

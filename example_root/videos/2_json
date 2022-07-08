@@ -1,0 +1,64 @@
+{
+  "data": {
+    "id": 2,
+    "type": "video",
+    "attributes": {
+      "id": 2,
+      "name": "ES2015 Template Strings",
+      "description": "<p>Template strings are an incredibly useful new feature in ES2015... and you can use them in your Ember apps today!</p>\n<p>Here are 3 cool things that template strings enable.</p>",
+      "thumbnail": "https://vue-screencasts.s3.us-east-2.amazonaws.com/images/video-thumbnails/thumbnail+-+Template+Strings.png",
+      "videoUrl": "https://vue-screencasts.s3.us-east-2.amazonaws.com/video-files/42-+ES2015+template+strings.mp4",
+      "created_at": "2022-06-09T00:00:00.000Z",
+      "updated_at": "2022-06-09T00:00:00.000Z"
+    },
+    "relationships": {
+      "tags": {
+        "data": [
+          {
+            "id": 1,
+            "type": "tag"
+          },
+          {
+            "id": 39,
+            "type": "tag"
+          }
+        ]
+      }
+    }
+  }
+  "included": [
+    {
+      "id": 1,
+      "type"; "tag",
+      "attributes": {
+        "name": "Javascript"
+      },
+      "relationships": {
+        "videos": {
+          "data": [
+            {
+              "id": 2,
+              "type": "video"
+            },
+            {
+              "id": 7,
+              "type": "video"
+            },
+            {
+              "id": 4,
+              "type": "video"
+            },
+            {
+              "id": 3,
+              "type": "video"
+            },
+            {
+              "id": 1,
+              "type": "video"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

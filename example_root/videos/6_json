@@ -1,0 +1,15 @@
+{
+  "data": {
+    "id": 6,
+    "type": "video",
+    "attributes": {
+      "id": 6,
+      "name": "Multiple Concurrent Promises",
+      "description": "<p>Sometimes promises have to happen in an exact order, but often there will be several calls that can be made concurrently. RSVP’s Promise implementation allows that.</p>\n<p>In this video we show how to use the hash method, one of several methods available to do concurrent promises.</p>",
+      "thumbnail": "https://vue-screencasts.s3.us-east-2.amazonaws.com/images/video-thumbnails/thumbnail+-+Multiple+Concurrent+Promises.png",
+      "videoUrl": "https://vue-screencasts.s3.us-east-2.amazonaws.com/video-files/EmberScreencast+95+-+Multiple+Concurrent+Promises.mp4",
+      "created_at": "2022-06-09T00:00:00.000Z",
+      "updated_at": "2022-06-09T00:00:00.000Z"
+    }
+  }
+}

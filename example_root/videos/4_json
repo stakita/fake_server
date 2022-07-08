@@ -1,0 +1,15 @@
+{
+  "data": {
+    "id": 4,
+    "type": "video",
+    "attributes": {
+      "id": 4,
+      "name": "Promise Basics",
+      "description": "<p>Promises are a tool for handling asynchronous communication, and they are commonly used in Ember applications. They’re even built in to Ember Data, route handling, and other parts of the Ember source.</p>\n<p>This episode introduces the then, catch, and finally blocks, how to chain them together, and how to use them with either "name"d or anonymous functions.</p>",
+      "thumbnail": "https://vue-screencasts.s3.us-east-2.amazonaws.com/images/video-thumbnails/thumbnail+-+Promise+Basics.png",
+      "videoUrl": "https://vue-screencasts.s3.us-east-2.amazonaws.com/video-files/EmberScreencast+92+-+Promises+Basics.mp4",
+      "created_at": "2022-06-09T00:00:00.000Z",
+      "updated_at": "2022-06-09T00:00:00.000Z"
+    }
+  }
+}

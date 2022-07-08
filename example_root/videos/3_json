@@ -1,0 +1,15 @@
+{
+  "data": {
+    "id": 3,
+    "type": "video",
+    "attributes": {
+      "id": 3,
+      "name": "ES2015 Modules",
+      "description": "<p>Before modules, javascript code loading was a mess. Now it's pretty amazing.</p>\n<p>Learn about ES2015 modules and how they work together with ember-cli.</p>",
+      "thumbnail": "https://vue-screencasts.s3.us-east-2.amazonaws.com/images/video-thumbnails/thumbnail+-+ES2015+Modules.png",
+      "videoUrl": "https://vue-screencasts.s3.us-east-2.amazonaws.com/video-files/EmberScreencast+62+-+ES2015+Modules+-+Import%2C+Export.mp4",
+      "created_at": "2022-06-09T00:00:00.000Z",
+      "updated_at": "2022-06-09T00:00:00.000Z"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "data": {
+    "id": 8,
+    "type": "video",
+    "attributes": {
+      "id": 8,
+      "name": "ES2016 Decorators",
+      "description": "<p>Decorators let you easily and repeatedly add functionality to existing functions.</p>\n<p>In this episode we go over how to use and create decorators, creating two useful decorators that demonstrate different parts of the API.</p>",
+      "thumbnail": "https://vue-screencasts.s3.us-east-2.amazonaws.com/images/video-thumbnails/thumbnail+-+Decorators.png",
+      "videoUrl": "https://vue-screencasts.s3.us-east-2.amazonaws.com/video-files/EmberScreencast+115+-+ES2016+Decorators.mp4",
+      "created_at": "2022-06-09T00:00:00.000Z",
+      "updated_at": "2022-06-09T00:00:00.000Z"
+    }
+  }
+}
