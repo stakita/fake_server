@@ -40,7 +40,7 @@ extension_map = {
     'jsonapi': 'application/vnd.api+json'
 }
 
-@app.route('/api/<path:filepath>')
+@app.route('/<path:filepath>')
 def server_fake(filepath):
     print('filepath:', filepath)
     print('root_dir:', root_dir)
@@ -79,8 +79,11 @@ def server_fake(filepath):
     return result
 
 def main(args):
+    global root_dir
     print(args)
     port = int(args['<PORT>'] or 3000)
+    directory = args['--directory']
+    root_dir = current_dir + '/' + directory
     app.run(port=port)
 
 
