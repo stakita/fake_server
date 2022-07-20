@@ -4,10 +4,11 @@
 A basic server for mocking REST interfaces.
 
 Usage:
-    server [--directory=PATH] [<PORT>]
+    server [<DIRECTORY>] [--port=<PORT>]
 
 Options:
-    <PORT>                      Port number [default: 3000].
+    <DIRECTORY>     Base directory of local filesystem to serve [default: .].
+    --port=<PORT>   Override port number [default: 3000].
 '''
 
 import sys
@@ -15,6 +16,7 @@ from flask import Flask, Response
 from flask_cors import CORS
 import os.path
 import glob
+import time
 try:
     from docopt import docopt
 except ImportError as e:
@@ -81,8 +83,8 @@ def server_fake(filepath):
 def main(args):
     global root_dir
     print(args)
-    port = int(args['<PORT>'] or 3000)
-    directory = args['--directory']
+    port = int(args['--port'] or 3000)
+    directory = args['<DIRECTORY>'] or '.'
     root_dir = current_dir + '/' + directory
     app.run(port=port)
 
