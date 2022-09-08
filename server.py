@@ -59,7 +59,7 @@ def server_fake(filepath):
         match = matches[0]
         path_section, extension = match.rsplit('_', 1)
         if path_section != mapped_path:
-            raise Exception('Ambiguous underscore sequence in path')
+            raise Exception('calculated path does not equal mapped_path: "%s" != "%s"' % (path_section, mapped_path))
         if extension in extension_map.keys():
             content_type = extension_map[extension]
         with open(match, 'rb') as fd:
@@ -84,7 +84,7 @@ def main(args):
     global root_dir
     print(args)
     port = int(args['--port'] or 3000)
-    directory = args['<DIRECTORY>'] or '.'
+    directory = args['<DIRECTORY>'].strip('/') or '.'
     root_dir = current_dir + '/' + directory
     app.run(port=port)
 
@@ -92,3 +92,4 @@ def main(args):
 if __name__ == '__main__':
     args = docopt(__doc__)
     sys.exit(main(args))
+
