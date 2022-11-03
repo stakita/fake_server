@@ -84,7 +84,7 @@ def main(args):
     global root_dir
     print(args)
     port = int(args['--port'] or 3000)
-    directory = args['<DIRECTORY>'].strip('/') or '.'
+    directory = (args['<DIRECTORY>'] or '.') .strip('/')
     root_dir = current_dir + '/' + directory
     app.run(port=port)
 
