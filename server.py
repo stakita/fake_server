@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-'''server
+'''fake_server
 
 A basic server for mocking REST interfaces.
 
 Usage:
-    server [<DIRECTORY>] [--port=<PORT>]
+    fake_server [<DIRECTORY>] [--port=<PORT>]
 
 Options:
     <DIRECTORY>     Base directory of local filesystem to serve [default: .].
@@ -24,14 +24,11 @@ except ImportError as e:
     sys.exit(1)
 
 app = Flask(__name__)
-# allowed_origins = 'http://localhost:8080'
 allowed_origins = '*'
 CORS(app, resources={r'/api/*': {'origins': allowed_origins}})
 
 current_dir = os.path.abspath(os.path.curdir)
-print('current_dir:', current_dir)
-
-root_dir = current_dir
+root_dir = None
 
 # Favorite type not here? Add entry based on: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
 extension_map = {
