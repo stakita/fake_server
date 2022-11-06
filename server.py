@@ -70,7 +70,7 @@ def server_fake(filepath):
             print('exists')
             # exact match
             with open(mapped_path, 'rb') as fd:
-                content_type = 'application/json'
+                content_type = extension_map['txt'] # default to txt
                 result = Response(fd.read(), mimetype=content_type)
         else:
             result = Response("Not found", status=404)
